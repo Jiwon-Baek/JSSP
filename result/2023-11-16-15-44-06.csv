@@ -1,0 +1,368 @@
+,Time,Event,Part,Process,Machine
+0,0.0,Part0 Created,Part0_0,Source0,
+1,0.0,Part1 Created,Part1_0,Source1,
+2,0.0,Part2 Created,Part2_0,Source2,
+3,0.0,Part3 Created,Part3_0,Source3,
+4,0.0,Part4 Created,Part4_0,Source4,
+5,0.0,Routing Start,Part0_0,Source0,
+6,0.0,Routing Start,Part1_0,Source1,
+7,0.0,Routing Start,Part2_0,Source2,
+8,0.0,Routing Start,Part3_0,Source3,
+9,0.0,Routing Start,Part4_0,Source4,
+10,0.0,Routing Finished,Part0_0,Source0,
+11,0.0,Part transferred from Source,Part0_0,Process0,
+12,0.0,Routing Finished,Part1_0,Source1,
+13,0.0,Part transferred from Source,Part1_0,Process1,
+14,0.0,Routing Finished,Part2_0,Source2,
+15,0.0,Part transferred from Source,Part2_0,Process2,
+16,0.0,Routing Finished,Part3_0,Source3,
+17,0.0,Part transferred from Source,Part3_0,Process3,
+18,0.0,Routing Finished,Part4_0,Source4,
+19,0.0,Part transferred from Source,Part4_0,Process4,
+20,0.0,Started,Part0_0,Process0,M0
+21,0.0,Started,Part1_0,Process1,M1
+22,0.0,Started,Part2_0,Process2,M2
+23,0.0,Started,Part3_0,Process3,M3
+24,0.0,Started,Part4_0,Process4,M4
+25,1.0,Finished,Part0_0,Process0,M0
+26,2.0,Part4 Created,Part4_1,Source4,
+27,2.0,Finished,Part1_0,Process1,M1
+28,2.0,Routing Start,Part4_1,Source4,
+29,2.0,Routing Finished,Part4_1,Source4,
+30,2.0,Part transferred from Source,Part4_1,Process4,
+31,2.0,Started,Part0_0,Process1,M1
+32,3.0,Part3 Created,Part3_1,Source3,
+33,3.0,Finished,Part2_0,Process2,M2
+34,3.0,Part4 Created,Part4_2,Source4,
+35,3.0,Routing Start,Part3_1,Source3,
+36,3.0,Routing Start,Part4_2,Source4,
+37,3.0,Routing Finished,Part3_1,Source3,
+38,3.0,Part transferred from Source,Part3_1,Process3,
+39,3.0,Routing Finished,Part4_2,Source4,
+40,3.0,Part transferred from Source,Part4_2,Process4,
+41,3.0,Started,Part1_0,Process2,M2
+42,4.0,Finished,Part3_0,Process3,M3
+43,4.0,Started,Part3_1,Process3,M3
+44,5.0,Finished,Part4_0,Process4,M4
+45,5.0,Started,Part4_1,Process4,M4
+46,5.0,Started,Part4_0,Process0,M0
+47,6.0,Part1 Created,Part1_1,Source1,
+48,6.0,Routing Start,Part1_1,Source1,
+49,6.0,Routing Finished,Part1_1,Source1,
+50,6.0,Part transferred from Source,Part1_1,Process1,
+51,7.0,Finished,Part0_0,Process1,M1
+52,7.0,Part1 Created,Part1_2,Source1,
+53,7.0,Routing Start,Part1_2,Source1,
+54,7.0,Routing Finished,Part1_2,Source1,
+55,7.0,Part transferred from Source,Part1_2,Process1,
+56,7.0,Started,Part1_1,Process1,M1
+57,8.0,Part4 Created,Part4_3,Source4,
+58,8.0,Finished,Part1_0,Process2,M2
+59,8.0,Finished,Part3_1,Process3,M3
+60,8.0,Routing Start,Part4_3,Source4,
+61,8.0,Routing Finished,Part4_3,Source4,
+62,8.0,Part transferred from Source,Part4_3,Process4,
+63,8.0,Started,Part0_0,Process2,M2
+64,8.0,Started,Part2_0,Process3,M3
+65,9.0,Finished,Part1_1,Process1,M1
+66,9.0,Started,Part1_2,Process1,M1
+67,10.0,Finished,Part4_1,Process4,M4
+68,10.0,Finished,Part4_0,Process0,M0
+69,10.0,Part4 Created,Part4_4,Source4,
+70,10.0,Routing Start,Part4_4,Source4,
+71,10.0,Routing Finished,Part4_4,Source4,
+72,10.0,Part transferred from Source,Part4_4,Process4,
+73,10.0,Started,Part4_2,Process4,M4
+74,10.0,Started,Part4_1,Process0,M0
+75,11.0,Part0 Created,Part0_1,Source0,
+76,11.0,Finished,Part1_2,Process1,M1
+77,11.0,Routing Start,Part0_1,Source0,
+78,11.0,Routing Finished,Part0_1,Source0,
+79,11.0,Part transferred from Source,Part0_1,Process0,
+80,11.0,Started,Part4_0,Process1,M1
+81,13.0,Finished,Part0_0,Process2,M2
+82,13.0,Finished,Part2_0,Process3,M3
+83,13.0,Started,Part1_1,Process2,M2
+84,13.0,Started,Part1_0,Process3,M3
+85,15.0,Finished,Part4_2,Process4,M4
+86,15.0,Finished,Part4_1,Process0,M0
+87,15.0,Part0 Created,Part0_2,Source0,
+88,15.0,Routing Start,Part0_2,Source0,
+89,15.0,Routing Finished,Part0_2,Source0,
+90,15.0,Part transferred from Source,Part0_2,Process0,
+91,15.0,Started,Part3_0,Process4,M4
+92,15.0,Started,Part0_1,Process0,M0
+93,16.0,Finished,Part4_0,Process1,M1
+94,16.0,Finished,Part0_1,Process0,M0
+95,16.0,Started,Part4_1,Process1,M1
+96,16.0,Started,Part4_2,Process0,M0
+97,18.0,Finished,Part1_1,Process2,M2
+98,18.0,Finished,Part1_0,Process3,M3
+99,18.0,Part0 Created,Part0_3,Source0,
+100,18.0,Routing Start,Part0_3,Source0,
+101,18.0,Routing Finished,Part0_3,Source0,
+102,18.0,Part transferred from Source,Part0_3,Process0,
+103,18.0,Started,Part1_2,Process2,M2
+104,18.0,Started,Part0_0,Process3,M3
+105,20.0,Finished,Part3_0,Process4,M4
+106,20.0,Started,Part4_3,Process4,M4
+107,21.0,Finished,Part4_1,Process1,M1
+108,21.0,Finished,Part4_2,Process0,M0
+109,21.0,Started,Part0_1,Process1,M1
+110,21.0,Started,Part0_2,Process0,M0
+111,22.0,Finished,Part0_2,Process0,M0
+112,22.0,Started,Part0_3,Process0,M0
+113,23.0,Part2 Created,Part2_1,Source2,
+114,23.0,Finished,Part1_2,Process2,M2
+115,23.0,Finished,Part0_0,Process3,M3
+116,23.0,Finished,Part0_3,Process0,M0
+117,23.0,Routing Start,Part2_1,Source2,
+118,23.0,Routing Finished,Part2_1,Source2,
+119,23.0,Part transferred from Source,Part2_1,Process2,
+120,23.0,Started,Part4_0,Process2,M2
+121,23.0,Started,Part1_1,Process3,M3
+122,23.0,Started,Part3_0,Process0,M0
+123,24.0,Part4 Created,Part4_5,Source4,
+124,24.0,Routing Start,Part4_5,Source4,
+125,24.0,Routing Finished,Part4_5,Source4,
+126,24.0,Part transferred from Source,Part4_5,Process4,
+127,25.0,Finished,Part4_3,Process4,M4
+128,25.0,Started,Part3_1,Process4,M4
+129,26.0,Part0 Created,Part0_4,Source0,
+130,26.0,Finished,Part0_1,Process1,M1
+131,26.0,Routing Start,Part0_4,Source0,
+132,26.0,Routing Finished,Part0_4,Source0,
+133,26.0,Part transferred from Source,Part0_4,Process0,
+134,26.0,Started,Part4_2,Process1,M1
+135,28.0,Finished,Part4_0,Process2,M2
+136,28.0,Finished,Part1_1,Process3,M3
+137,28.0,Finished,Part3_0,Process0,M0
+138,28.0,Started,Part4_1,Process2,M2
+139,28.0,Started,Part1_2,Process3,M3
+140,28.0,Started,Part4_3,Process0,M0
+141,30.0,Finished,Part3_1,Process4,M4
+142,30.0,Started,Part4_4,Process4,M4
+143,31.0,Finished,Part4_2,Process1,M1
+144,31.0,Started,Part0_2,Process1,M1
+145,33.0,Finished,Part4_1,Process2,M2
+146,33.0,Finished,Part1_2,Process3,M3
+147,33.0,Finished,Part4_3,Process0,M0
+148,33.0,Started,Part2_1,Process2,M2
+149,33.0,Started,Part4_0,Process3,M3
+150,33.0,Started,Part0_4,Process0,M0
+151,34.0,Finished,Part0_4,Process0,M0
+152,34.0,Started,Part3_1,Process0,M0
+153,35.0,Finished,Part4_4,Process4,M4
+154,35.0,Started,Part2_0,Process4,M4
+155,36.0,Finished,Part0_2,Process1,M1
+156,36.0,Finished,Part2_1,Process2,M2
+157,36.0,Started,Part0_3,Process1,M1
+158,36.0,Started,Part0_1,Process2,M2
+159,38.0,Finished,Part4_0,Process3,M3
+160,38.0,Completed,Part4_0,Sink,
+161,38.0,Started,Part4_1,Process3,M3
+162,39.0,Finished,Part3_1,Process0,M0
+163,39.0,Started,Part4_4,Process0,M0
+164,40.0,Finished,Part2_0,Process4,M4
+165,40.0,Started,Part1_0,Process4,M4
+166,41.0,Finished,Part0_3,Process1,M1
+167,41.0,Finished,Part0_1,Process2,M2
+168,41.0,Started,Part3_0,Process1,M1
+169,41.0,Started,Part4_2,Process2,M2
+170,43.0,Part2 Created,Part2_2,Source2,
+171,43.0,Finished,Part4_1,Process3,M3
+172,43.0,Routing Start,Part2_2,Source2,
+173,43.0,Completed,Part4_1,Sink,
+174,43.0,Routing Finished,Part2_2,Source2,
+175,43.0,Part transferred from Source,Part2_2,Process2,
+176,43.0,Started,Part2_1,Process3,M3
+177,44.0,Finished,Part4_4,Process0,M0
+178,44.0,Started,Part2_0,Process0,M0
+179,45.0,Finished,Part1_0,Process4,M4
+180,45.0,Started,Part0_0,Process4,M4
+181,46.0,Finished,Part3_0,Process1,M1
+182,46.0,Finished,Part4_2,Process2,M2
+183,46.0,Started,Part4_3,Process1,M1
+184,46.0,Started,Part0_2,Process2,M2
+185,47.0,Part1 Created,Part1_3,Source1,
+186,47.0,Routing Start,Part1_3,Source1,
+187,47.0,Routing Finished,Part1_3,Source1,
+188,47.0,Part transferred from Source,Part1_3,Process1,
+189,48.0,Finished,Part2_1,Process3,M3
+190,48.0,Started,Part0_1,Process3,M3
+191,49.0,Finished,Part2_0,Process0,M0
+192,49.0,Started,Part1_0,Process0,M0
+193,50.0,Finished,Part0_0,Process4,M4
+194,50.0,Completed,Part0_0,Sink,
+195,50.0,Started,Part4_5,Process4,M4
+196,51.0,Finished,Part4_3,Process1,M1
+197,51.0,Finished,Part0_2,Process2,M2
+198,51.0,Started,Part0_4,Process1,M1
+199,51.0,Started,Part0_3,Process2,M2
+200,52.0,Part0 Created,Part0_5,Source0,
+201,52.0,Routing Start,Part0_5,Source0,
+202,52.0,Routing Finished,Part0_5,Source0,
+203,52.0,Part transferred from Source,Part0_5,Process0,
+204,53.0,Finished,Part0_1,Process3,M3
+205,53.0,Started,Part4_2,Process3,M3
+206,54.0,Finished,Part1_0,Process0,M0
+207,54.0,Completed,Part1_0,Sink,
+208,54.0,Started,Part0_5,Process0,M0
+209,55.0,Finished,Part4_5,Process4,M4
+210,55.0,Finished,Part0_5,Process0,M0
+211,55.0,Started,Part1_1,Process4,M4
+212,55.0,Started,Part4_5,Process0,M0
+213,56.0,Finished,Part0_4,Process1,M1
+214,56.0,Finished,Part0_3,Process2,M2
+215,56.0,Started,Part3_1,Process1,M1
+216,56.0,Started,Part2_2,Process2,M2
+217,58.0,Part1 Created,Part1_4,Source1,
+218,58.0,Finished,Part4_2,Process3,M3
+219,58.0,Routing Start,Part1_4,Source1,
+220,58.0,Completed,Part4_2,Sink,
+221,58.0,Routing Finished,Part1_4,Source1,
+222,58.0,Part transferred from Source,Part1_4,Process1,
+223,58.0,Started,Part0_2,Process3,M3
+224,59.0,Finished,Part2_2,Process2,M2
+225,59.0,Started,Part3_0,Process2,M2
+226,60.0,Finished,Part1_1,Process4,M4
+227,60.0,Finished,Part4_5,Process0,M0
+228,60.0,Started,Part1_2,Process4,M4
+229,60.0,Started,Part1_1,Process0,M0
+230,61.0,Part3 Created,Part3_2,Source3,
+231,61.0,Finished,Part3_1,Process1,M1
+232,61.0,Routing Start,Part3_2,Source3,
+233,61.0,Routing Finished,Part3_2,Source3,
+234,61.0,Part transferred from Source,Part3_2,Process3,
+235,61.0,Started,Part4_4,Process1,M1
+236,63.0,Finished,Part0_2,Process3,M3
+237,63.0,Started,Part0_3,Process3,M3
+238,64.0,Finished,Part3_0,Process2,M2
+239,64.0,Completed,Part3_0,Sink,
+240,64.0,Started,Part4_3,Process2,M2
+241,65.0,Finished,Part1_2,Process4,M4
+242,65.0,Finished,Part1_1,Process0,M0
+243,65.0,Completed,Part1_1,Sink,
+244,65.0,Started,Part2_1,Process4,M4
+245,65.0,Started,Part1_2,Process0,M0
+246,66.0,Finished,Part4_4,Process1,M1
+247,66.0,Started,Part1_3,Process1,M1
+248,68.0,Finished,Part0_3,Process3,M3
+249,68.0,Finished,Part1_3,Process1,M1
+250,68.0,Started,Part2_2,Process3,M3
+251,68.0,Started,Part2_0,Process1,M1
+252,69.0,Finished,Part4_3,Process2,M2
+253,69.0,Started,Part0_4,Process2,M2
+254,70.0,Part1 Created,Part1_5,Source1,
+255,70.0,Finished,Part2_1,Process4,M4
+256,70.0,Finished,Part1_2,Process0,M0
+257,70.0,Routing Start,Part1_5,Source1,
+258,70.0,Completed,Part1_2,Sink,
+259,70.0,Routing Finished,Part1_5,Source1,
+260,70.0,Part transferred from Source,Part1_5,Process1,
+261,70.0,Started,Part0_1,Process4,M4
+262,70.0,Started,Part2_1,Process0,M0
+263,71.0,Part4 Created,Part4_6,Source4,
+264,71.0,Routing Start,Part4_6,Source4,
+265,71.0,Routing Finished,Part4_6,Source4,
+266,71.0,Part transferred from Source,Part4_6,Process4,
+267,73.0,Finished,Part2_2,Process3,M3
+268,73.0,Finished,Part2_0,Process1,M1
+269,73.0,Completed,Part2_0,Sink,
+270,73.0,Started,Part3_2,Process3,M3
+271,73.0,Started,Part0_5,Process1,M1
+272,74.0,Part0 Created,Part0_6,Source0,
+273,74.0,Finished,Part0_4,Process2,M2
+274,74.0,Routing Start,Part0_6,Source0,
+275,74.0,Routing Finished,Part0_6,Source0,
+276,74.0,Part transferred from Source,Part0_6,Process0,
+277,74.0,Started,Part3_1,Process2,M2
+278,75.0,Finished,Part0_1,Process4,M4
+279,75.0,Finished,Part2_1,Process0,M0
+280,75.0,Completed,Part0_1,Sink,
+281,75.0,Started,Part0_2,Process4,M4
+282,75.0,Started,Part0_6,Process0,M0
+283,76.0,Part2 Created,Part2_3,Source2,
+284,76.0,Finished,Part0_6,Process0,M0
+285,76.0,Routing Start,Part2_3,Source2,
+286,76.0,Routing Finished,Part2_3,Source2,
+287,76.0,Part transferred from Source,Part2_3,Process2,
+288,77.0,Finished,Part3_2,Process3,M3
+289,77.0,Started,Part4_3,Process3,M3
+290,78.0,Finished,Part0_5,Process1,M1
+291,78.0,Started,Part1_4,Process1,M1
+292,79.0,Finished,Part3_1,Process2,M2
+293,79.0,Completed,Part3_1,Sink,
+294,79.0,Started,Part4_4,Process2,M2
+295,80.0,Finished,Part0_2,Process4,M4
+296,80.0,Finished,Part1_4,Process1,M1
+297,80.0,Completed,Part0_2,Sink,
+298,80.0,Started,Part0_3,Process4,M4
+299,80.0,Started,Part4_5,Process1,M1
+300,82.0,Part4 Created,Part4_7,Source4,
+301,82.0,Finished,Part4_3,Process3,M3
+302,82.0,Routing Start,Part4_7,Source4,
+303,82.0,Completed,Part4_3,Sink,
+304,82.0,Routing Finished,Part4_7,Source4,
+305,82.0,Part transferred from Source,Part4_7,Process4,
+306,82.0,Started,Part0_4,Process3,M3
+307,83.0,Part1 Created,Part1_6,Source1,
+308,83.0,Part0 Created,Part0_7,Source0,
+309,83.0,Routing Start,Part1_6,Source1,
+310,83.0,Routing Start,Part0_7,Source0,
+311,83.0,Routing Finished,Part1_6,Source1,
+312,83.0,Part transferred from Source,Part1_6,Process1,
+313,83.0,Routing Finished,Part0_7,Source0,
+314,83.0,Part transferred from Source,Part0_7,Process0,
+315,83.0,Started,Part0_7,Process0,M0
+316,84.0,Finished,Part4_4,Process2,M2
+317,84.0,Finished,Part0_7,Process0,M0
+318,84.0,Started,Part1_3,Process2,M2
+319,85.0,Finished,Part0_3,Process4,M4
+320,85.0,Finished,Part4_5,Process1,M1
+321,85.0,Completed,Part0_3,Sink,
+322,85.0,Started,Part4_6,Process4,M4
+323,85.0,Started,Part1_5,Process1,M1
+324,87.0,Finished,Part0_4,Process3,M3
+325,87.0,Finished,Part1_5,Process1,M1
+326,87.0,Started,Part4_4,Process3,M3
+327,87.0,Started,Part2_1,Process1,M1
+328,89.0,Finished,Part1_3,Process2,M2
+329,89.0,Started,Part2_3,Process2,M2
+330,90.0,Finished,Part4_6,Process4,M4
+331,90.0,Started,Part2_2,Process4,M4
+332,90.0,Started,Part4_6,Process0,M0
+333,92.0,Part3 Created,Part3_3,Source3,
+334,92.0,Finished,Part4_4,Process3,M3
+335,92.0,Finished,Part2_1,Process1,M1
+336,92.0,Finished,Part2_3,Process2,M2
+337,92.0,Routing Start,Part3_3,Source3,
+338,92.0,Completed,Part4_4,Sink,
+339,92.0,Completed,Part2_1,Sink,
+340,92.0,Routing Finished,Part3_3,Source3,
+341,92.0,Part transferred from Source,Part3_3,Process3,
+342,92.0,Started,Part1_3,Process3,M3
+343,92.0,Started,Part0_6,Process1,M1
+344,92.0,Started,Part0_5,Process2,M2
+345,95.0,Part0 Created,Part0_8,Source0,
+346,95.0,Finished,Part2_2,Process4,M4
+347,95.0,Finished,Part4_6,Process0,M0
+348,95.0,Routing Start,Part0_8,Source0,
+349,95.0,Routing Finished,Part0_8,Source0,
+350,95.0,Part transferred from Source,Part0_8,Process0,
+351,95.0,Started,Part3_2,Process4,M4
+352,95.0,Started,Part0_8,Process0,M0
+353,96.0,Finished,Part0_8,Process0,M0
+354,96.0,Started,Part2_2,Process0,M0
+355,97.0,Finished,Part1_3,Process3,M3
+356,97.0,Finished,Part0_6,Process1,M1
+357,97.0,Finished,Part0_5,Process2,M2
+358,97.0,Part0 Created,Part0_9,Source0,
+359,97.0,Routing Start,Part0_9,Source0,
+360,97.0,Routing Finished,Part0_9,Source0,
+361,97.0,Part transferred from Source,Part0_9,Process0,
+362,97.0,Started,Part3_3,Process3,M3
+363,97.0,Started,Part1_6,Process1,M1
+364,97.0,Started,Part1_4,Process2,M2
+365,99.0,Finished,Part1_6,Process1,M1
+366,99.0,Started,Part0_7,Process1,M1

@@ -15,24 +15,27 @@ Monitor             Monitor
 Based on 'JSSP_6Factors_nobuffer_231113.py' file
 Revised in 2023. 11. 15.
 """
-from .environment import Source, Sink, Job, Operation, Process, Machine, Monitor
+from environment.Source import Source
+from environment.Sink import Sink
+from environment.Part import Job, Operation
+from environment.Process import Process
+from environment.Resource import Machine
+from environment.Monitor import Monitor
+from postprocessing.PostProcessing import *
 from config import *
+from visualization.Gantt import *
+from visualization.GUI import GUI
 
 import simpy, os, random
 import pandas as pd
 import numpy as np
-from datetime import datetime
 from collections import OrderedDict
 
-save_path = '../result'
-if not os.path.exists(save_path):
-    os.makedirs(save_path)
+
 
 if __name__ == "__main__":
 
-    now = datetime.now()
-    filename = now.strftime('%Y-%m-%d-%H-%M-%S')
-    filepath = './result/'+filename+'.csv'
+
     env = simpy.Environment()
     monitor = Monitor(filepath)
 
@@ -49,5 +52,10 @@ if __name__ == "__main__":
 
     # In case of the situation where termination of the simulation greatly affects the machine utilization time,
     # it is necessary to terminate all the process at (SIMUL_TIME -1) and add up the process time to all machines
-    env.run(100)
+    env.run(SIMUL_TIME)
     monitor.save_event_tracer()
+    machine_log = machine_log(filepath)
+    gantt = Gantt(machine_log, len(machine_log), printmode=True, writemode=True)
+    gui = GUI(gantt)
+    print()
+

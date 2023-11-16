@@ -1,5 +1,6 @@
 import simpy
 
+from config import *
 
 class Machine(object):
     def __init__(self, env, id):

@@ -1,5 +1,5 @@
 import simpy
-from Monitor import *
+from .Monitor import *
 from config import *
 
 class Process(object):

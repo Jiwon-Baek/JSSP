@@ -1,6 +1,8 @@
 import simpy
 import numpy as np
-from Part import *
+from .Part import Job, Operation
+
+from config import *
 
 # region Source
 class Source(object):
@@ -39,7 +41,6 @@ class Source(object):
                 # 4. Print through Console (Optional)
                 if CONSOLE_MODE:
                     print('-' * 15 + part.name + " Created" + '-' * 15)
-
                 # 5. Proceed on IAT timeout
                 # ! Handling an IAT value given as a string variable
                 # If self.IAT is the string 'exponential(1)',

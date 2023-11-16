@@ -1,4 +1,4 @@
-from .environment import Source, Sink, Job, Operation, Process, Machine, Worker, Monitor, visualize, print_console
+from environment import Source, Sink, Job, Operation, Process, Machine, Monitor
 
 import simpy, os, random
 import pandas as pd

@@ -1,6 +1,6 @@
 import simpy
 from config import *
-from Monitor import *
+from .Monitor import *
 
 
 # region Sink
