@@ -18,10 +18,10 @@ class Source(object):
         self.rec = 0  # 생성된 Part의 갯수를 기록하는 변수
         self.generated_parts = simpy.Store(_env, capacity=10)  # 10 is an arbitrary number
 
-        self.generate = _env.process(self.run())
-        self.route = _env.process(self.routing())
+        _env.process(self.generate())
+        _env.process(self.routing())
 
-    def run(self):
+    def generate(self):
         while True:
             while self.rec < self.num_parts:
                 # 1. Generate a Part Object
@@ -67,10 +67,11 @@ class Source(object):
             # 3. Put the part into the in_part queue of the next process
             # This 'yield' enables handling Process of limited queue,
             # by pending the 'put' call until the process is available for a new part
+            print(part.name, "is going to be put in ",next_process.name)
             yield next_process.in_part.put(part)
             part.loc = next_process.name
-            next_process.run_event.succeed()  # Enables detection of incoming part
-            next_process.run_event = simpy.Event(self.env)
+            next_process.input_event.succeed()  # Enables detection of incoming part
+            next_process.input_event = simpy.Event(self.env)
 
             # 4. Record
             self.monitor.record(self.env.now, self.name, machine=None,

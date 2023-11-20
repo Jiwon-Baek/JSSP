@@ -12,7 +12,7 @@ def machine_log(_filepath):
 
     machine_start = []
     machine_finish = []
-    for i in range(5):
+    for i in range(NUM_MACHINE):
         machine_start.append(df_started[(df_started['Machine'] == 'M' + str(i))])
         machine_finish.append(df_finished[(df_finished['Machine'] == 'M' + str(i))])
 
@@ -20,7 +20,7 @@ def machine_log(_filepath):
         machine_finish[i].reset_index(drop=True, inplace=True)
     data = []
 
-    for i in range(5):
+    for i in range(NUM_MACHINE):
         for j in range(len(machine_finish[i])):
             temp = {'Machine': i,
                     'Job': machine_start[i].loc[j, 'Part'],

@@ -18,45 +18,52 @@ simmode = ''
 
 # create a column with the color for each department
 def color(row):
-    c_dict = {'Part0':'#E64646', 'Part1':'#E69646', 'Part2':'#34D05C', 'Part3':'#34D0C3', 'Part4':'#3475D0'}
+    c_dict = {'Part0': '#0000ff', 'Part1': '#ffa500', 'Part2': '#006400',
+              'Part3': '#ff0000', 'Part4': '#cdc0b0', 'Part5': '#66cdaa',
+              'Part6': '#1abc9c','Part7': '#a52a2a','Part8': '#5bc0de',
+              'Part9': '#fc8c84'}
     return c_dict[row['Job'][0:5]]
 
 
 def Gantt(result, num, printmode = True, writemode = False):
 
-    df = result.iloc[0:num]
+    df = result.iloc[0:num].copy()
 
-    # project start date
-    proj_start = df.Start.min()
-
-    # number of days from project start to task start
-    df['start_num'] = (df.Start - proj_start)
-    # number of days from project start to end of tasks
-    df['end_num'] = (df.Finish - proj_start)
-    # days between start and end of each task
-    df['days_start_to_end'] = df.end_num - df.start_num
+    # # project start date
+    # proj_start = df.Start.min()
+    #
+    # # number of days from project start to task start
+    # df['start_num'] = (df.Start - proj_start)
+    # # number of days from project start to end of tasks
+    # df['end_num'] = (df.Finish - proj_start)
+    # # days between start and end of each task
+    # df['days_start_to_end'] = df['end_num'] - ['start_num']
 
     df['color'] = df.apply(color, axis=1)
 
     fig, ax = plt.subplots(1, figsize=(16, 10))
-    ax.barh(df.Machine, df.days_start_to_end, left=df.start_num, color=df.color, edgecolor='black')
+    ax.barh(df.Machine, df.Delta, left=df.Start, color=df.color, edgecolor='black')
     ##### LEGENDS #####
-    c_dict = {'Part0': '#E64646', 'Part1': '#E69646', 'Part2': '#34D05C', 'Part3': '#34D0C3', 'Part4': '#3475D0'}
+    c_dict = {'Part0': '#0000ff', 'Part1': '#ffa500', 'Part2': '#006400',
+              'Part3': '#ff0000', 'Part4': '#cdc0b0', 'Part5': '#66cdaa',
+              'Part6': '#1abc9c','Part7': '#a52a2a','Part8': '#5bc0de',
+              'Part9': '#fc8c84'}
     legend_elements = [Patch(facecolor=c_dict[i], label=i) for i in c_dict]
     plt.legend(handles=legend_elements)
 
     ##### TICKS #####
-
-    plt.show()
+    if printmode:
+        plt.show()
 
     # Save the figure as an image file
-    fig.savefig(save_path + '/' + filename + '.png', format='png')
+    if writemode:
+        fig.savefig(save_path + '/' + filename + '.png', format='png')
 
     # Create a BytesIO object
     image_bytes_io = BytesIO()
 
     # Save the figure to the BytesIO object
-    fig.savefig(image_bytes_io, format='png')
+    fig.savefig(image_bytes_io, format='png')  # This is different from saving file as .png
 
     # Get the image bytes
     image_bytes = image_bytes_io.getvalue()

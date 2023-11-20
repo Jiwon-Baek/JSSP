@@ -50,11 +50,11 @@ class Job(object):
         self.step = -1
         self.loc = None  # current location
         self.op = [Operation(env,
-                             id=i, part_name=self.name,
-                             process_type=op_data[part_type][i][0],
-                             machine_list=op_data[part_type][i][0],
-                             process_time=op_data[part_type][i][1],
-                             requirements=None) for i in range(len(op_data[part_type]))]
+                             id=j, part_name=self.name,
+                             process_type=op_data[part_type][j][0],
+                             machine_list=op_data[part_type][j][0],
+                             process_time=op_data[part_type][j][1],
+                             requirements=None) for j in range(len(op_data[part_type]))]
 
 
 # endregion Job

@@ -1,0 +1,59 @@
+,Time,Event,Part,Process,Machine
+0,0,Part0 Created,Part0_0,Source0,
+1,0,Part1 Created,Part1_0,Source1,
+2,0,Part2 Created,Part2_0,Source2,
+3,0,Part3 Created,Part3_0,Source3,
+4,0,Part4 Created,Part4_0,Source4,
+5,0,Part5 Created,Part5_0,Source5,
+6,0,Part6 Created,Part6_0,Source6,
+7,0,Part7 Created,Part7_0,Source7,
+8,0,Part8 Created,Part8_0,Source8,
+9,0,Part9 Created,Part9_0,Source9,
+10,0,Routing Start,Part0_0,Source0,
+11,0,Routing Start,Part1_0,Source1,
+12,0,Routing Start,Part2_0,Source2,
+13,0,Routing Start,Part3_0,Source3,
+14,0,Routing Start,Part4_0,Source4,
+15,0,Routing Start,Part5_0,Source5,
+16,0,Routing Start,Part6_0,Source6,
+17,0,Routing Start,Part7_0,Source7,
+18,0,Routing Start,Part8_0,Source8,
+19,0,Routing Start,Part9_0,Source9,
+20,0,Routing Finished,Part0_0,Source0,
+21,0,Part transferred from Source,Part0_0,Process4,
+22,0,Routing Finished,Part1_0,Source1,
+23,0,Part transferred from Source,Part1_0,Process5,
+24,0,Routing Finished,Part2_0,Source2,
+25,0,Part transferred from Source,Part2_0,Process9,
+26,0,Routing Finished,Part3_0,Source3,
+27,0,Part transferred from Source,Part3_0,Process7,
+28,0,Routing Finished,Part4_0,Source4,
+29,0,Part transferred from Source,Part4_0,Process3,
+30,0,Routing Finished,Part5_0,Source5,
+31,0,Part transferred from Source,Part5_0,Process1,
+32,0,Routing Finished,Part6_0,Source6,
+33,0,Part transferred from Source,Part6_0,Process7,
+34,0,Routing Finished,Part7_0,Source7,
+35,0,Part transferred from Source,Part7_0,Process4,
+36,0,Routing Finished,Part8_0,Source8,
+37,0,Part transferred from Source,Part8_0,Process0,
+38,0,Routing Finished,Part9_0,Source9,
+39,0,Part transferred from Source,Part9_0,Process3,
+40,0,Started,Part7_0,Process4,M4
+41,0,Started,Part1_0,Process5,M5
+42,0,Started,Part2_0,Process9,M9
+43,0,Started,Part3_0,Process7,M7
+44,0,Started,Part4_0,Process3,M3
+45,0,Started,Part5_0,Process1,M1
+46,0,Started,Part8_0,Process0,M0
+47,69,Finished,Part4_0,Process3,M3
+48,72,Finished,Part1_0,Process5,M5
+49,83,Finished,Part2_0,Process9,M9
+50,83,Started,Part2_0,Process8,M8
+51,94,Finished,Part3_0,Process7,M7
+52,94,Finished,Part8_0,Process0,M0
+53,98,Finished,Part7_0,Process4,M4
+54,98,Started,Part7_0,Process6,M6
+55,99,Finished,Part5_0,Process1,M1
+56,144,Finished,Part2_0,Process8,M8
+57,171,Finished,Part7_0,Process6,M6
