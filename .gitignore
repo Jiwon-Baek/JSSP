@@ -1,0 +1,11 @@
+result/
+environment/__pycache__/
+visualization/__pycache__/
+test/__pycache__/
+__pycache__/
+postprocessing/__pycache__/
+MachineInputOrder/__pycache__/
+GA/__pycache__/
+.idea
+Data/__pycache__/
+*.pyc
