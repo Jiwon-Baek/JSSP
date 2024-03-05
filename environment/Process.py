@@ -83,22 +83,22 @@ class Process(object):
     def dispatch(self):
         while True:
 
+            yield self.input_event
             if DISPATCH_MODE == 'FIFO':
                 # # # Version 1 - FIFO Rule
-                yield self.input_event
                 part_ready = yield self.in_part.get()
                 yield self.part_ready.put(part_ready)
-                self.ready_event.succeed()
-                self.ready_event = simpy.Event(self.env)
+                # self.ready_event.succeed()
+                # self.ready_event = simpy.Event(self.env)
 
             elif DISPATCH_MODE == 'Manual':
                 # # Version 2 - Solution Rule
-                yield self.input_event
                 num_scan = len(self.in_part.items)
                 for i in range(num_scan):
                     if self.check_item():
                         part_ready = yield self.in_part.get(lambda x: x.part_type == self.machine_order[self.scheduled])
                         # print("Part ", part_ready.part_type, "is prepared")
+                        # self.part_ready.put(part_ready)
                         yield self.part_ready.put(part_ready)
                         self.scheduled += 1
 
@@ -120,7 +120,8 @@ class Process(object):
             part = yield self.out_part.get()
 
             # update part status
-            if part.step != NUM_MACHINE - 1:  # for operation 0,1,2,3 -> part.step = 1,2,3,4
+            if part.step != 9:  # for operation 0,1,2,3 -> part.step = 1,2,3,4
+            # if part.step != NUM_MACHINE - 1:  # for operation 0,1,2,3 -> part.step = 1,2,3,4
                 part.step += 1
                 part.op[part.step].requirements.succeed()
                 next_process = self.model['Process' + str(part.op[part.step].process_type)]  # i.e. model['Process0']

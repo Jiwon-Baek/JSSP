@@ -65,7 +65,7 @@ ga_instance.run()
 solution, solution_fitness, solution_idx = ga_instance.best_solution()
 
 seq = get_sorted_indices(solution)
-ind = Individual(seq)
+ind = Individual(10, 10, seq=seq)
 prediction = ind.makespan
 print("Parameters of the best solution : {solution}".format(solution=ind.machine_seq))
 print("Fitness value of the best solution = {solution_fitness}".format(solution_fitness=solution_fitness))
